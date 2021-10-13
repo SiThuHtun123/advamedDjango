@@ -5,7 +5,7 @@ from django.urls import reverse
 
 
 class Maintenance(models.Model):
-    no = models.CharField(max_length=100000000, default="N/A")
+    no = models.CharField(max_length=10485760, default="N/A")
     product_description = models.TextField(max_length=10000, default="N/A")
     brand = models.CharField(max_length=1000, default="N/A")
     model = models.CharField(max_length=1000, default="N/A")
@@ -43,7 +43,7 @@ class Maintenance(models.Model):
 
 
 class ServiceRecord(models.Model):
-    case_no = models.CharField(max_length=100000000, default="N/A")
+    case_no = models.CharField(max_length=10485760, default="N/A")
     date = models.CharField(max_length=1000, default="N/A")
     time = models.CharField(max_length=1000, default="N/A")
     name_of_hospital = models.CharField(max_length=1000, default="N/A")
@@ -87,7 +87,7 @@ class ServiceRecord(models.Model):
 
 
 class InstallationRecord(models.Model):
-    case_no = models.CharField(max_length=100000000, default="N/A")
+    case_no = models.CharField(max_length=10485760, default="N/A")
     date = models.CharField(max_length=1000, default="N/A")
     time = models.CharField(max_length=1000, default="N/A")
     name_of_hospital = models.CharField(max_length=1000, default="N/A")
