@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os.path
 from pathlib import Path
-import django_heroku
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Yangon'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -145,4 +145,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'advamedmedical1@gmail.com'
 EMAIL_HOST_PASSWORD = 'Chekoilar11'
 
-django_heroku.settings(locals())
+
