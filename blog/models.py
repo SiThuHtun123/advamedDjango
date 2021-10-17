@@ -12,7 +12,7 @@ class Maintenance(models.Model):
     s_n = models.CharField(max_length=1000, default="N/A")
     hospital = models.CharField(max_length=1000, default="N/A")
     city = models.CharField(max_length=1000, default="N/A")
-    installation_service_contract_doc_no = models.CharField(max_length=1000, default="N/A")
+    installtion_service_contract_doc_no = models.CharField(max_length=1000, default="N/A")
     installed_service_contract_date = models.CharField(max_length=1000, default="N/A")
     service_contract_package = models.CharField(max_length=1000, default="N/A")
     first_date = models.CharField(max_length=1000, default="N/A")
