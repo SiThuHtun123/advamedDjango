@@ -41,7 +41,6 @@ class Maintenance(models.Model):
         return reverse('maintenance_data-detail', kwargs={'pk': self.pk})
 
 
-
 class ServiceRecord(models.Model):
     case_no = models.CharField(max_length=10485760, default="N/A")
     date = models.CharField(max_length=1000, default="N/A")
@@ -83,7 +82,6 @@ class ServiceRecord(models.Model):
 
     def get_absolute_url(self):
         return reverse('service_record_data-detail', kwargs={'pk': self.pk})
-
 
 
 class InstallationRecord(models.Model):
