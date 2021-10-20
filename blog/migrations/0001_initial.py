@@ -67,7 +67,7 @@ class Migration(migrations.Migration):
                 ('s_n', models.CharField(default='N/A', max_length=1000)),
                 ('hospital', models.CharField(default='N/A', max_length=1000)),
                 ('city', models.CharField(default='N/A', max_length=1000)),
-                ('installation_service_contract_doc_no', models.CharField(default='N/A', max_length=1000)),
+                ('installtion_service_contract_doc_no', models.CharField(default='N/A', max_length=1000)),
                 ('installed_service_contract_date', models.CharField(default='N/A', max_length=1000)),
                 ('service_contract_package', models.CharField(default='N/A', max_length=1000)),
                 ('first_date', models.CharField(default='N/A', max_length=1000)),

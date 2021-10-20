@@ -81,7 +81,7 @@ class MaintenanceDataCreateView(LoginRequiredMixin, PermissionRequiredMixin, Cre
 class MaintenanceDataUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Maintenance
     fields = ['no', 'product_description', 'brand', 'model', 's_n', 'hospital', 'city',
-              'installation_service_contract_doc_no', 'installed_service_contract_date',
+              'installtion_service_contract_doc_no', 'installed_service_contract_date',
               'service_contract_package', 'first_date', 'first_doc_no', 'first_provider', 'first_remark',
               'second_date', 'second_doc_no', 'second_provider' ,'second_remark', 'third_date', 'third_doc_no',
               'third_provider', 'third_remark', 'fourth_date', 'fourth_doc_no', 'fourth_provider', 'fourth_remark']
