@@ -156,14 +156,14 @@
                         <div id="myDropdown" class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
                             {% if user.is_authenticated and user.is_staff %}
                                 <a class="dropdown-item" href="{% url 'blog-home' %}">Preventive Maintenance History Record</a>
-                                <a class="dropdown-item" href="#">Service Record</a>
+                                <a class="dropdown-item" href="{% url 'service_record' %}">Service Record</a>
                                 <a class="dropdown-item" href="{% url 'installation_record' %}">Installation Record</a>
                             {% elif perms.blog.change_maintenance %}
                                 <a class="dropdown-item" href="{% url 'blog-home' %}">Preventive Maintenance History Record</a>
-                                <a class="dropdown-item" href="#">Service Record</a>
+                                <a class="dropdown-item" href="{% url 'service_record' %}">Service Record</a>
                                 <a class="dropdown-item" href="{% url 'installation_record' %}">Installation Record</a>
                             {% else %}
-                                <a class="dropdown-item" href="#">Service Record</a>
+                                <a class="dropdown-item" href="{% url 'service_record' %}">Service Record</a>
                                 <a class="dropdown-item" href="{% url 'installation_record' %}">Installation Record</a>
                             {% endif %}
                         </div>
